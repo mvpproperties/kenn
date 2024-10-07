@@ -35,7 +35,7 @@
             <div class="right-side">
                 <div class="topic-text">STATUS CERTIFICATE REQUEST FORM</div>
                 <p>For inquiries, feel free to message us</p>
-            <form action="https://formsubmit.co/95a43b9124d9df67dbc1c6ffeaef3f19" method="POST" >
+            <form action="https://formsubmit.co/95a43b9124d9df67dbc1c6ffeaef3f19" method="POST" onsubmit="redirectToThankYouPage()">
                 <div class="input-box">
                     <input type="text" name="Name" placeholder="Status Certificate Requested By:" required>
                 </div>
@@ -133,6 +133,14 @@
                     <input type="submit" value="Send Now">
                 </div>
             </form>
+            <script>
+                function redirectToThankYouPage() {
+                    // Redirect after submission
+                    setTimeout(function() {
+                        window.location.href = "https://mvpproperties.github.io/kenn/"; // Change to your thank-you page URL
+                    }, 1000); // Redirect after 1 second
+                }
+            </script>
         </div>
         </div>
     </div>
