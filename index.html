@@ -133,29 +133,6 @@
                     <input type="submit" value="Send Now">
                 </div>
             </form>
-             <script>
-        document.getElementById('contact-form').onsubmit = function(event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            // Use Fetch API to submit the form
-            fetch(this.action, {
-                method: this.method,
-                body: new FormData(this),
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    // Redirect to your thank you page on another site
-                    window.location.href = "https://mvpproperties.github.io/kenn/"; // Change to your thank-you URL
-                } else {
-                    alert("There was a problem with your submission.");
-                }
-            }).catch(error => {
-                alert("There was a problem with your submission.");
-            });
-        };
-    </script>
         </div>
         </div>
     </div>
